@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Movies{
+struct Movies: Decodable{
     var results: [Movie]
 }
 
-struct Movie: Identifiable{
+struct Movie: Identifiable, Codable{
     var id: Int
     var overview: String
     var poster_path: String
