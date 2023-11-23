@@ -10,7 +10,12 @@ struct API{
     static let route = "https://api.themoviedb.org/3/movie/popular?api_key=929f5e2df6050431812d85ddde464094"
 }
 
+protocol APIProtocol{
+    func getMovieList() async -> Movies?
+}
+
 class TMBDRepository: APIProtocol {
+    static let shared = TMBDRepository()
     
     let nservice: NetworkAPIService
     init(nservice: NetworkAPIService = NetworkAPIService.shared){
