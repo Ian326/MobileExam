@@ -10,6 +10,9 @@
 		E1873E4D2B0F34A5001D6A81 /* TMDB_Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E4C2B0F34A5001D6A81 /* TMDB_Models.swift */; };
 		E1873E502B0F34E0001D6A81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E1873E4F2B0F34E0001D6A81 /* Alamofire */; };
 		E1873E532B0F34F6001D6A81 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E1873E522B0F34F6001D6A81 /* SDWebImageSwiftUI */; };
+		E1873E552B0F4BA9001D6A81 /* TMBD_API_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */; };
+		E1873E572B0F50C0001D6A81 /* TMBD_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */; };
+		E1873E592B0F5346001D6A81 /* NetworkAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */; };
 		E1AFCD4C2B0F2FC7003F562B /* MobileExamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AFCD4B2B0F2FC7003F562B /* MobileExamApp.swift */; };
 		E1AFCD4E2B0F2FC7003F562B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AFCD4D2B0F2FC7003F562B /* ContentView.swift */; };
 		E1AFCD502B0F2FC8003F562B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1AFCD4F2B0F2FC8003F562B /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		E1873E4C2B0F34A5001D6A81 /* TMDB_Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_Models.swift; sourceTree = "<group>"; };
+		E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBD_API_Protocol.swift; sourceTree = "<group>"; };
+		E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBD_Repository.swift; sourceTree = "<group>"; };
+		E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIService.swift; sourceTree = "<group>"; };
 		E1AFCD482B0F2FC7003F562B /* MobileExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AFCD4B2B0F2FC7003F562B /* MobileExamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileExamApp.swift; sourceTree = "<group>"; };
 		E1AFCD4D2B0F2FC7003F562B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				E1AFCD4D2B0F2FC7003F562B /* ContentView.swift */,
 				E1AFCD4F2B0F2FC8003F562B /* Assets.xcassets */,
 				E1AFCD512B0F2FC8003F562B /* Preview Content */,
+				E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */,
+				E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */,
+				E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */,
 			);
 			path = MobileExam;
 			sourceTree = "<group>";
@@ -282,7 +291,10 @@
 			files = (
 				E1AFCD4E2B0F2FC7003F562B /* ContentView.swift in Sources */,
 				E1AFCD4C2B0F2FC7003F562B /* MobileExamApp.swift in Sources */,
+				E1873E572B0F50C0001D6A81 /* TMBD_Repository.swift in Sources */,
+				E1873E592B0F5346001D6A81 /* NetworkAPIService.swift in Sources */,
 				E1873E4D2B0F34A5001D6A81 /* TMDB_Models.swift in Sources */,
+				E1873E552B0F4BA9001D6A81 /* TMBD_API_Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
