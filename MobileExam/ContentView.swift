@@ -27,7 +27,24 @@ struct ContentView: View {
                 }
                 Divider()
             }
+        }.onAppear(){
+            Task{
+                await getMovieList()
+            }
         }
+    }
+    
+    func getMovieList() async{
+        let TMBDRepository = TMBDRepository()
+        let result = await TMBDRepository.getMovieList()
+        
+        var tempMovieList = [Movie]()
+        for i in 0...result!.results.count-1 {
+            let movie = result!.results[i]
+            let tempMovie = Movie(id: i, overview: movie.overview, poster_path: movie.poster_path, title: movie.title, vote_average: movie.vote_average)
+            tempMovieList.append(tempMovie)
+        }
+        movieList = tempMovieList
     }
 }
 

@@ -11,8 +11,12 @@ import Alamofire
 class NetworkAPIService {
     static let shared = NetworkAPIService()
     
+    private let apiKey = "929f5e2df6050431812d85ddde464094"
+    
     func getMovies(url: URL) async -> Movies?{
-        let taskRequest = AF.request(url, method: .get).validate()
+        var headers: HTTPHeaders = [:]
+        headers["Authorization"] = "Bearer \(apiKey)"
+        let taskRequest = AF.request(url, method: .get, headers: headers).validate()
         let response = await taskRequest.serializingData().response
         
         switch response.result {

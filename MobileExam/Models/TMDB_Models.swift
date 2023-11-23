@@ -11,7 +11,7 @@ struct Movies: Decodable{
     var results: [Movie]
 }
 
-struct Movie: Identifiable, Codable{
+struct Movie: Codable, Identifiable{
     var id: Int
     var overview: String
     var poster_path: String
