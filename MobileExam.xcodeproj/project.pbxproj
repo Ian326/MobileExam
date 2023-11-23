@@ -101,12 +101,44 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		E13ACF4E2B0F910C00393339 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACF4A2B0F8C4500393339 /* Views */,
+				E13ACF4B2B0F8C6F00393339 /* ViewModels */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		E13ACF4F2B0F911400393339 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E13ACF512B0F919900393339 /* Network */,
+				E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */,
+				E1873E4B2B0F3450001D6A81 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E13ACF502B0F911B00393339 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E13ACF512B0F919900393339 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		E1873E4B2B0F3450001D6A81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */,
-				E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */,
-				E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */,
 				E1873E4C2B0F34A5001D6A81 /* TMDB_Models.swift */,
 			);
 			path = Models;
@@ -135,9 +167,9 @@
 		E1AFCD4A2B0F2FC7003F562B /* MobileExam */ = {
 			isa = PBXGroup;
 			children = (
-				E13ACF4B2B0F8C6F00393339 /* ViewModels */,
-				E13ACF4A2B0F8C4500393339 /* Views */,
-				E1873E4B2B0F3450001D6A81 /* Models */,
+				E13ACF502B0F911B00393339 /* Domain */,
+				E13ACF4F2B0F911400393339 /* Data */,
+				E13ACF4E2B0F910C00393339 /* Framework */,
 				E1AFCD4B2B0F2FC7003F562B /* MobileExamApp.swift */,
 				E1AFCD4F2B0F2FC8003F562B /* Assets.xcassets */,
 				E1AFCD512B0F2FC8003F562B /* Preview Content */,
