@@ -16,5 +16,5 @@ struct Movie: Codable, Identifiable{
     var overview: String
     var poster_path: String
     var title: String
-    var vote_average: String
+    var vote_average: Float
 }
