@@ -11,7 +11,6 @@
 		E1873E4D2B0F34A5001D6A81 /* TMDB_Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E4C2B0F34A5001D6A81 /* TMDB_Models.swift */; };
 		E1873E502B0F34E0001D6A81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E1873E4F2B0F34E0001D6A81 /* Alamofire */; };
 		E1873E532B0F34F6001D6A81 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E1873E522B0F34F6001D6A81 /* SDWebImageSwiftUI */; };
-		E1873E552B0F4BA9001D6A81 /* TMBD_API_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */; };
 		E1873E572B0F50C0001D6A81 /* TMBD_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */; };
 		E1873E592B0F5346001D6A81 /* NetworkAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */; };
 		E1AFCD4C2B0F2FC7003F562B /* MobileExamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AFCD4B2B0F2FC7003F562B /* MobileExamApp.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		E13ACF4C2B0F8CD700393339 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		E1873E4C2B0F34A5001D6A81 /* TMDB_Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_Models.swift; sourceTree = "<group>"; };
-		E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBD_API_Protocol.swift; sourceTree = "<group>"; };
 		E1873E562B0F50C0001D6A81 /* TMBD_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBD_Repository.swift; sourceTree = "<group>"; };
 		E1873E582B0F5346001D6A81 /* NetworkAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIService.swift; sourceTree = "<group>"; };
 		E1AFCD482B0F2FC7003F562B /* MobileExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +136,6 @@
 		E1873E4B2B0F3450001D6A81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E1873E542B0F4BA9001D6A81 /* TMBD_API_Protocol.swift */,
 				E1873E4C2B0F34A5001D6A81 /* TMDB_Models.swift */,
 			);
 			path = Models;
@@ -346,7 +343,6 @@
 				E13ACF4D2B0F8CD700393339 /* ContentViewModel.swift in Sources */,
 				E1873E592B0F5346001D6A81 /* NetworkAPIService.swift in Sources */,
 				E1873E4D2B0F34A5001D6A81 /* TMDB_Models.swift in Sources */,
-				E1873E552B0F4BA9001D6A81 /* TMBD_API_Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
