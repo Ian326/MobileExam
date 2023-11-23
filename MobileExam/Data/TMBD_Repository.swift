@@ -15,6 +15,7 @@ protocol APIProtocol{
 }
 
 class TMBDRepository: APIProtocol {
+    static let shared = TMBDRepository()
     
     let nservice: NetworkAPIService
     init(nservice: NetworkAPIService = NetworkAPIService.shared){

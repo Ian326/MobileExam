@@ -6,13 +6,25 @@
 //
 
 import Foundation
+import Alamofire
+
+class movieListReq {
+    static let shared = movieListRequirement()
+}
 
 class ContentViewModel: ObservableObject{
     @Published var movieList = [Movie]()
     
+    var movieListRequirement: movieListReqProtocol
+
+    init(movieListRequirement: movieListReqProtocol = movieListReq.shared) {
+        self.movieListRequirement = movieListRequirement
+    }
+    
+    @MainActor
     func getMovieList() async{
-        let TMBDRepository = TMBDRepository()
-        let result = await TMBDRepository.getMovieList()
+        
+        let result = await movieListRequirement.getMovieList()
         
         for i in 0...result!.results.count-1 {
             let movie = result!.results[i]
